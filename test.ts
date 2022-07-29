@@ -15,5 +15,6 @@ for(const pokemon of Pokemon.slice(0, 20)) {
     b.add(pokemon)
 }
 
-console.log(b.shuffle())
+// console.log(b.shuffle())
+console.log(b.at(-1))
 console.log(b.array())
