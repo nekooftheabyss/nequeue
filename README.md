@@ -7,6 +7,7 @@ A queue-like wrapper around the JavaScript `array`.
 Supports the following default Array methods:
 - `at()` (now warps on either side of the queue, also removes the item from the array)
 - `every()`
+- `some()`
 - `find()` (also removes the item from the queue)
 - `filter()`
 - `map()`

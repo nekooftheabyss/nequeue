@@ -118,6 +118,14 @@ export class Nequeue<T> {
     return this.sort(() => Math.random() - 0.5);
   }
   /**
+   * Check whether at least one element in the map satisfies a function.
+   * @param fn Function to run on every element.
+   * @returns True or false
+   */
+  some(fn: (v: T) => boolean): boolean {
+    return this.#data.some(fn);
+  }
+  /**
    * Sort elements in the queue.
    * @param fn Function to use for sorting.
    * @returns {Nequeue<T>} sorted queue.
